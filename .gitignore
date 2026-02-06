@@ -1,6 +1,40 @@
+# --- Systemowe (macOS) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Python i Środowisko ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+build/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Jeśli nie chcesz wysyłać dużych obrazków wygenerowanych w notatniku:
+# .virtual_documents/
+
+# --- DANE I MODELE (KLUCZOWE!) ---
+# Ignorujemy całe foldery z danymi, bo są za ciężkie na GitHub
 datasets/
+data/
+raw_data/
+
+# Ignorujemy konkretne formaty medyczne i archiwa
 *.nii
 *.nii.gz
-.ipynb_checkpoints
-__pycache__/
-*.DS_Store
+*.zip
+*.tar.gz
+*.rar
+
+
+# --- Logi i błędy ---
+*.log
